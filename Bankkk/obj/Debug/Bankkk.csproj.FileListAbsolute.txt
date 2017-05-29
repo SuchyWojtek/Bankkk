@@ -1,0 +1,15 @@
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\bin\Debug\Bankkk.exe.config
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\bin\Debug\Bankkk.exe
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\bin\Debug\Bankkk.pdb
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.csprojResolveAssemblyReference.cache
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormLoign.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormMainWindow.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.Properties.Resources.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.csproj.GenerateResource.Cache
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.exe
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.pdb
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormWithdraw.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormPay.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormTransfer.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormNewAccount.resources
+C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormDeleteAccount.resources
