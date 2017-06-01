@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormChooseType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChooseType.Designer.cs">
+      <DependentUpon>FormChooseType.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDeleteAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     <Compile Include="FormNewAccount.Designer.cs">
       <DependentUpon>FormNewAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNewFirmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewFirmAccount.Designer.cs">
+      <DependentUpon>FormNewFirmAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormChooseType.resx">
+      <DependentUpon>FormChooseType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDeleteAccount.resx">
       <DependentUpon>FormDeleteAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNewAccount.resx">
       <DependentUpon>FormNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewFirmAccount.resx">
+      <DependentUpon>FormNewFirmAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPay.resx">
       <DependentUpon>FormPay.cs</DependentUpon>

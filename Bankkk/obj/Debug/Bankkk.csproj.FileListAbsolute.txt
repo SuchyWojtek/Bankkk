@@ -13,3 +13,19 @@ C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Ba
 C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormTransfer.resources
 C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormNewAccount.resources
 C:\Users\Wojtek\Documents\Visual Studio 2015\Projects\Bankkk\Bankkk\obj\Debug\Bankkk.FormDeleteAccount.resources
+j:\Desktop\Bankkk\Bankkk\bin\Debug\Bankkk.exe.config
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.exe
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.pdb
+j:\Desktop\Bankkk\Bankkk\bin\Debug\Bankkk.exe
+j:\Desktop\Bankkk\Bankkk\bin\Debug\Bankkk.pdb
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.csprojResolveAssemblyReference.cache
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormDeleteAccount.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormLoign.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormMainWindow.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormNewAccount.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormPay.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormTransfer.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormWithdraw.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.Properties.Resources.resources
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.csproj.GenerateResource.Cache
+j:\Desktop\Bankkk\Bankkk\obj\Debug\Bankkk.FormChooseType.resources

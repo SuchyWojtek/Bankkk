@@ -78,9 +78,10 @@ namespace Bankkk
             else if (passEnter() == true && freeLogin() == true)
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = "insert into Login (Username, Password, Name, Surname, Dateofbirth, Age, Saldo) values ('" +
+                string query = "insert into Login (Username, Password, Name, Surname, Street, Postalcode, Dateofbirth, Age, Saldo) values ('" +
                     txtLogin.Text.ToString() + "', '" + txtPassword.Text.ToString() + "', '" + txtFirstName.Text.ToString() + "', '" +
-                    txtSurname.Text.ToString() + "', '" + txtDateOfBirth.Text.ToString() + "', '" + txtAge.Text.ToString() + "', '" + "0')";
+                    txtSurname.Text.ToString() + "', '" + txtStreet.Text.ToString() + "', '" + "', '" + txtPostalCode.Text.ToString() + 
+                    "', '" + txtDateOfBirth.Text.ToString() + "', '" + txtAge.Text.ToString() + "', '" + "0')";
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 // wykonuje polecenie sql
@@ -93,6 +94,8 @@ namespace Bankkk
                 txtPassword.Clear();
                 txtFirstName.Clear();
                 txtSurname.Clear();
+                txtStreet.Clear();
+                txtPostalCode.Clear();
                 txtEnterPassword.Clear();
                 txtDateOfBirth.Clear();
                 txtAge.Clear();

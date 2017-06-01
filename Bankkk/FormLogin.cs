@@ -14,11 +14,14 @@ namespace Bankkk
     public partial class FormLoign : Form
     {
 
+        string today;
+
         public FormLoign()
         {
             InitializeComponent();
             txtPassword.Text = "";
             txtPassword.PasswordChar = '*'; // gwiazdkowanie hasla
+
         }
         /*
         private void btnExit_Click(object sender, EventArgs e) // close
@@ -53,7 +56,7 @@ namespace Bankkk
         private void btnNewAccount_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormNewAccount f = new FormNewAccount();
+            FormChooseType f = new FormChooseType();
             f.Show();
         }
     }
