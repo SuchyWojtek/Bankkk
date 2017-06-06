@@ -36,6 +36,8 @@
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnTransfer = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.radPrivate = new System.Windows.Forms.RadioButton();
+            this.radFirm = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lblWhom
@@ -57,7 +59,7 @@
             // lblHowMuch
             // 
             this.lblHowMuch.AutoSize = true;
-            this.lblHowMuch.Location = new System.Drawing.Point(9, 66);
+            this.lblHowMuch.Location = new System.Drawing.Point(9, 88);
             this.lblHowMuch.Name = "lblHowMuch";
             this.lblHowMuch.Size = new System.Drawing.Size(242, 17);
             this.lblHowMuch.TabIndex = 2;
@@ -65,15 +67,15 @@
             // 
             // txtHowMuch
             // 
-            this.txtHowMuch.Location = new System.Drawing.Point(12, 86);
+            this.txtHowMuch.Location = new System.Drawing.Point(12, 108);
             this.txtHowMuch.Name = "txtHowMuch";
             this.txtHowMuch.Size = new System.Drawing.Size(301, 22);
-            this.txtHowMuch.TabIndex = 3;
+            this.txtHowMuch.TabIndex = 6;
             // 
             // lblPass
             // 
             this.lblPass.AutoSize = true;
-            this.lblPass.Location = new System.Drawing.Point(9, 125);
+            this.lblPass.Location = new System.Drawing.Point(9, 147);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(184, 17);
             this.lblPass.TabIndex = 4;
@@ -81,37 +83,61 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(12, 145);
+            this.txtPass.Location = new System.Drawing.Point(12, 167);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(301, 22);
-            this.txtPass.TabIndex = 5;
+            this.txtPass.TabIndex = 7;
             // 
             // btnTransfer
             // 
-            this.btnTransfer.Location = new System.Drawing.Point(12, 188);
+            this.btnTransfer.Location = new System.Drawing.Point(12, 210);
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(135, 39);
-            this.btnTransfer.TabIndex = 6;
+            this.btnTransfer.TabIndex = 8;
             this.btnTransfer.Text = "Transfer";
             this.btnTransfer.UseVisualStyleBackColor = true;
             this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(178, 188);
+            this.btnBack.Location = new System.Drawing.Point(178, 210);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(135, 39);
-            this.btnBack.TabIndex = 7;
+            this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // radPrivate
+            // 
+            this.radPrivate.AutoSize = true;
+            this.radPrivate.Location = new System.Drawing.Point(12, 57);
+            this.radPrivate.Name = "radPrivate";
+            this.radPrivate.Size = new System.Drawing.Size(72, 21);
+            this.radPrivate.TabIndex = 3;
+            this.radPrivate.TabStop = true;
+            this.radPrivate.Text = "private";
+            this.radPrivate.UseVisualStyleBackColor = true;
+            // 
+            // radFirm
+            // 
+            this.radFirm.AutoSize = true;
+            this.radFirm.Location = new System.Drawing.Point(95, 57);
+            this.radFirm.Name = "radFirm";
+            this.radFirm.Size = new System.Drawing.Size(52, 21);
+            this.radFirm.TabIndex = 5;
+            this.radFirm.TabStop = true;
+            this.radFirm.Text = "firm";
+            this.radFirm.UseVisualStyleBackColor = true;
             // 
             // FormTransfer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(325, 238);
+            this.ClientSize = new System.Drawing.Size(325, 257);
+            this.Controls.Add(this.radFirm);
+            this.Controls.Add(this.radPrivate);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnTransfer);
             this.Controls.Add(this.txtPass);
@@ -137,5 +163,7 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnTransfer;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.RadioButton radPrivate;
+        private System.Windows.Forms.RadioButton radFirm;
     }
 }

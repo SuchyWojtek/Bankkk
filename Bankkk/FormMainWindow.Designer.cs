@@ -103,7 +103,7 @@
             this.btnExit.Location = new System.Drawing.Point(12, 320);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(368, 38);
-            this.btnExit.TabIndex = 6;
+            this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -113,7 +113,7 @@
             this.btnDeleteAccount.Location = new System.Drawing.Point(12, 276);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
             this.btnDeleteAccount.Size = new System.Drawing.Size(368, 38);
-            this.btnDeleteAccount.TabIndex = 7;
+            this.btnDeleteAccount.TabIndex = 6;
             this.btnDeleteAccount.Text = "Delete account";
             this.btnDeleteAccount.UseVisualStyleBackColor = true;
             this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);

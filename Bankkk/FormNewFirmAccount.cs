@@ -16,6 +16,10 @@ namespace Bankkk
         public FormNewFirmAccount()
         {
             InitializeComponent();
+            txtPassword.Text = "";
+            txtPassword.PasswordChar = '*';
+            txtEnterPassword.Text = "";
+            txtEnterPassword.PasswordChar = '*';
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -39,8 +43,8 @@ namespace Bankkk
 
         private bool freeLogin() // sprawdzam czy login nie jest zajety
         {
-            SqlConnection con = new SqlConnection();
-            SqlDataAdapter sda = new SqlDataAdapter("Select Count (*) From Login where Username = '" + txtLogin.Text + "'", con);
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count (*) From Login2 where Username = '" + txtLogin.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
@@ -78,10 +82,10 @@ namespace Bankkk
             }
             else if (passEnter() == true && freeLogin() == true)
             {
-                SqlConnection con = new SqlConnection();
-                string query = "insert into Login (Username, Password, Name, Street, Postalcode, Typeofcompany, Nip, Regon, Krs, Saldo) values ('" +
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
+                string query = "insert into Login2 (Username, Password, Name, Street, Postalcode, Typeofcompany, Nip, Regon, Krs, Saldo) values ('" +
                     txtLogin.Text.ToString() + "', '" + txtPassword.Text.ToString() + "', '" + txtFirmName.Text.ToString() + "', '" +
-                    txtStreet.Text.ToString() + "', '" + txtPostalCode.Text.ToString() + "', '" + "', '" + txtTypeOfCompany.Text.ToString() +
+                    txtStreet.Text.ToString() + "', '" + txtPostalCode.Text.ToString() + "', '" + txtTypeOfCompany.Text.ToString() +
                     "', '" + txtNIP.Text.ToString() + "', '" + txtRegon.Text.ToString() + "', '" + txtKrs.Text.ToString() + "', '" + "0')";
                 SqlCommand cmd = new SqlCommand(query, con);
 

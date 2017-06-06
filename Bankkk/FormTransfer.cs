@@ -15,11 +15,14 @@ namespace Bankkk
     {
         string log;
         string pass;
+        string typeOfAccount;
+        string typeOfReceiver;
 
-        public FormTransfer(string log, string pass)
+        public FormTransfer(string log, string pass, string typeOfAccount)
         {
             this.log = log;
             this.pass = pass;
+            this.typeOfAccount = typeOfAccount;
             InitializeComponent();
             txtPass.Text = "";
             txtPass.PasswordChar = '*';
@@ -28,15 +31,24 @@ namespace Bankkk
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMainWindow f = new FormMainWindow(log, pass);
+            FormMainWindow f = new FormMainWindow(log, pass, typeOfAccount);
             f.Show();
         }
 
         public float howMuchWithraw() // pobieram wartosc z bazy danych i dodaje wartosc z txtboxa 
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Saldo From Login where Username = '" + txtWhom.Text +
+            SqlDataAdapter sda;
+            if (typeOfReceiver == "p")
+            {
+                sda = new SqlDataAdapter("Select Saldo From Login where Username = '" + txtWhom.Text +
                 "'", con);
+            }
+            else
+            {
+                sda = new SqlDataAdapter("Select Saldo From Login2 where Username = '" + txtWhom.Text +
+                "'", con);
+            }
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
@@ -46,8 +58,17 @@ namespace Bankkk
         public float howMuchPay() // pobieram wartosc z bazy danych i odejmuje wartosc z txtboxa 
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Saldo From Login where Username = '" + log +
+            SqlDataAdapter sda;
+            if (typeOfAccount == "p")
+            {
+                sda = new SqlDataAdapter("Select Saldo From Login where Username = '" + log +
                 "' and Password = '" + pass + "'", con);
+            }
+            else
+            {
+                sda = new SqlDataAdapter("Select Saldo From Login2 where Username = '" + log +
+                "' and Password = '" + pass + "'", con);
+            }
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
@@ -56,11 +77,21 @@ namespace Bankkk
 
         private void btnTransfer_Click(object sender, EventArgs e)
         {
+            if (radFirm.Checked) { typeOfReceiver = "f"; }
+            if (radPrivate.Checked) { typeOfReceiver = "p"; }
             if (pass == txtPass.Text.ToString()) // weryfikacja
             {
                 // wyplacam z konta osoby ktora przelewa
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = "update Login set saldo = @saldoParam where username = '" + log + "'";
+                string query;
+                if (typeOfAccount == "p")
+                {
+                    query = "update Login set saldo = @saldoParam where username = '" + log + "'";
+                }
+                else
+                {
+                    query = "update Login2 set saldo = @saldoParam where username = '" + log + "'";
+                }
                 SqlCommand sqlCmd = new SqlCommand(query, con);
 
                 sqlCmd.Parameters.Add("@saldoParam", SqlDbType.Float);
@@ -73,7 +104,15 @@ namespace Bankkk
                 // teraz bede wplacal to co wyplacilem do celu (konta)
 
                 SqlConnection con2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-                string query2 = "update Login set saldo = @saldoParam where username = '" + txtWhom.Text + "'";
+                string query2;
+                if (typeOfReceiver == "p")
+                {
+                    query2 = "update Login set saldo = @saldoParam where username = '" + txtWhom.Text + "'";
+                }
+                else
+                {
+                    query2 = "update Login2 set saldo = @saldoParam where username = '" + txtWhom.Text + "'";
+                }
                 SqlCommand sqlCmd2 = new SqlCommand(query2, con2);
 
                 sqlCmd2.Parameters.Add("@saldoParam", SqlDbType.Float);

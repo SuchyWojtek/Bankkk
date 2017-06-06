@@ -16,26 +16,39 @@ namespace Bankkk
         // dane klienta ktorego obsugujemy
         string log;
         string pass;
+        string typeOfAccount;
 
-        public FormPay(string log, string pass)
+        public FormPay(string log, string pass, string typeOfAccount)
         {
             this.log = log;
             this.pass = pass;
+            this.typeOfAccount = typeOfAccount;
             InitializeComponent();
         }
 
         private void btnBack_Click(object sender, EventArgs e) // wracam do main window
         {
             this.Hide();
-            FormMainWindow f = new FormMainWindow(log, pass);
+            FormMainWindow f = new FormMainWindow(log, pass, typeOfAccount);
             f.Show();
         }
 
         public float howMuchPay() // pobieram wartosc z bazy danych i odejmuje wartosc z txtboxa 
         {
+
+
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Saldo From Login where Username = '" + log +
+            SqlDataAdapter sda;
+            if (typeOfAccount == "p")
+            {
+                sda = new SqlDataAdapter("Select Saldo From Login where Username = '" + log +
                 "' and Password = '" + pass + "'", con);
+            }
+            else
+            {
+                sda = new SqlDataAdapter("Select Saldo From Login2 where Username = '" + log +
+                "' and Password = '" + pass + "'", con);
+            }
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
@@ -45,7 +58,15 @@ namespace Bankkk
         private void btnPay_Click(object sender, EventArgs e) // updatuje wartosc w saldo dla danego klienta
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "update Login set saldo = @saldoParam where username = '" + log + "'";
+            string query;
+            if (typeOfAccount == "p")
+            {
+                query = "update Login set saldo = @saldoParam where username = '" + log + "'";
+            }
+            else
+            {
+                query = "update Login2 set saldo = @saldoParam where username = '" + log + "'";
+            }
             SqlCommand sqlCmd = new SqlCommand(query, con);
 
             sqlCmd.Parameters.Add("@saldoParam", SqlDbType.Float);

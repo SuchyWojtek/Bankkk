@@ -13,8 +13,7 @@ namespace Bankkk
 {
     public partial class FormLoign : Form
     {
-
-        string today;
+        string typeOfAccount;
 
         public FormLoign()
         {
@@ -32,20 +31,36 @@ namespace Bankkk
         private void btnLogin_Click(object sender, EventArgs e) // logowanie 
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Count (*) From Login where Username = '" + txtLogin.Text + 
-                "' and Password = '" + txtPassword.Text + "'",con);
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Login where Username = '"
+                + txtLogin.Text + "' and Password = '" + txtPassword.Text + "'",con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
             if (dt.Rows[0][0].ToString() == "1") // jezeli znaleziono klienta o danym hasle i loginie to logujemy sie do main window
             {
+                typeOfAccount = "p";
                 this.Hide();
-                FormMainWindow main = new FormMainWindow(txtLogin.Text, txtPassword.Text);
+                FormMainWindow main = new FormMainWindow(txtLogin.Text, txtPassword.Text, typeOfAccount);
                 main.Show();
             }
-            else // jesli zle dane to wtedy wiadomosc
+            else
             {
-                MessageBox.Show("Bad Username or Password");
+                SqlDataAdapter sda2 = new SqlDataAdapter("Select Count(*) From Login2 where Username = '"
+                + txtLogin.Text + "' and Password = '" + txtPassword.Text + "'", con);
+                DataTable dt2 = new DataTable();
+                sda2.Fill(dt2);
+
+                if (dt2.Rows[0][0].ToString() == "1") // jezeli znaleziono klienta o danym hasle i loginie to logujemy sie do main window
+                {
+                    typeOfAccount = "f";
+                    this.Hide();
+                    FormMainWindow main = new FormMainWindow(txtLogin.Text, txtPassword.Text, typeOfAccount);
+                    main.Show();
+                }
+                else // jesli zle dane to wtedy wiadomosc
+                {
+                    MessageBox.Show("Bad Username or Password");
+                }
             }
         }
 

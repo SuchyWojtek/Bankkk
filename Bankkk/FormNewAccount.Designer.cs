@@ -53,193 +53,184 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(9, 14);
-            this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLogin.Location = new System.Drawing.Point(12, 17);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(33, 13);
+            this.lblLogin.Size = new System.Drawing.Size(43, 17);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login";
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(96, 11);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLogin.Location = new System.Drawing.Point(128, 14);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(178, 20);
+            this.txtLogin.Size = new System.Drawing.Size(236, 22);
             this.txtLogin.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(96, 34);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Location = new System.Drawing.Point(128, 42);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(178, 20);
+            this.txtPassword.Size = new System.Drawing.Size(236, 22);
             this.txtPassword.TabIndex = 3;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(9, 37);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPassword.Location = new System.Drawing.Point(12, 46);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.Size = new System.Drawing.Size(69, 17);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
             // txtEnterPassword
             // 
-            this.txtEnterPassword.Location = new System.Drawing.Point(96, 57);
-            this.txtEnterPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEnterPassword.Location = new System.Drawing.Point(128, 70);
+            this.txtEnterPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEnterPassword.Name = "txtEnterPassword";
-            this.txtEnterPassword.Size = new System.Drawing.Size(178, 20);
+            this.txtEnterPassword.Size = new System.Drawing.Size(236, 22);
             this.txtEnterPassword.TabIndex = 5;
             // 
             // lblEnterPassword
             // 
             this.lblEnterPassword.AutoSize = true;
-            this.lblEnterPassword.Location = new System.Drawing.Point(9, 59);
-            this.lblEnterPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEnterPassword.Location = new System.Drawing.Point(12, 73);
             this.lblEnterPassword.Name = "lblEnterPassword";
-            this.lblEnterPassword.Size = new System.Drawing.Size(80, 13);
+            this.lblEnterPassword.Size = new System.Drawing.Size(106, 17);
             this.lblEnterPassword.TabIndex = 4;
             this.lblEnterPassword.Text = "Enter password";
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(96, 80);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstName.Location = new System.Drawing.Point(128, 98);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(178, 20);
+            this.txtFirstName.Size = new System.Drawing.Size(236, 22);
             this.txtFirstName.TabIndex = 7;
             // 
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(9, 82);
-            this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFirstName.Location = new System.Drawing.Point(12, 101);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(55, 13);
+            this.lblFirstName.Size = new System.Drawing.Size(74, 17);
             this.lblFirstName.TabIndex = 6;
             this.lblFirstName.Text = "First name";
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(96, 104);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSurname.Location = new System.Drawing.Point(128, 128);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(178, 20);
+            this.txtSurname.Size = new System.Drawing.Size(236, 22);
             this.txtSurname.TabIndex = 9;
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(9, 107);
-            this.lblSurname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSurname.Location = new System.Drawing.Point(12, 132);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(49, 13);
+            this.lblSurname.Size = new System.Drawing.Size(65, 17);
             this.lblSurname.TabIndex = 8;
             this.lblSurname.Text = "Surname";
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(96, 176);
-            this.txtAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAge.Location = new System.Drawing.Point(128, 217);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(178, 20);
-            this.txtAge.TabIndex = 11;
+            this.txtAge.Size = new System.Drawing.Size(236, 22);
+            this.txtAge.TabIndex = 14;
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(9, 177);
-            this.lblAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAge.Location = new System.Drawing.Point(12, 218);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(26, 13);
+            this.lblAge.Size = new System.Drawing.Size(33, 17);
             this.lblAge.TabIndex = 10;
             this.lblAge.Text = "Age";
             // 
             // txtDateOfBirth
             // 
-            this.txtDateOfBirth.Location = new System.Drawing.Point(96, 199);
-            this.txtDateOfBirth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDateOfBirth.Location = new System.Drawing.Point(128, 245);
+            this.txtDateOfBirth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.Size = new System.Drawing.Size(178, 20);
-            this.txtDateOfBirth.TabIndex = 13;
+            this.txtDateOfBirth.Size = new System.Drawing.Size(236, 22);
+            this.txtDateOfBirth.TabIndex = 15;
             // 
             // lblDateOfBierth
             // 
             this.lblDateOfBierth.AutoSize = true;
-            this.lblDateOfBierth.Location = new System.Drawing.Point(9, 201);
-            this.lblDateOfBierth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateOfBierth.Location = new System.Drawing.Point(12, 247);
             this.lblDateOfBierth.Name = "lblDateOfBierth";
-            this.lblDateOfBierth.Size = new System.Drawing.Size(65, 13);
+            this.lblDateOfBierth.Size = new System.Drawing.Size(86, 17);
             this.lblDateOfBierth.TabIndex = 12;
             this.lblDateOfBierth.Text = "Date of birth";
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(170, 223);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm.Location = new System.Drawing.Point(227, 274);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(104, 31);
-            this.btnConfirm.TabIndex = 14;
+            this.btnConfirm.Size = new System.Drawing.Size(139, 38);
+            this.btnConfirm.TabIndex = 37;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(61, 223);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Location = new System.Drawing.Point(81, 274);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(104, 31);
-            this.btnBack.TabIndex = 15;
+            this.btnBack.Size = new System.Drawing.Size(139, 38);
+            this.btnBack.TabIndex = 39;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtStreet
             // 
-            this.txtStreet.Location = new System.Drawing.Point(96, 128);
-            this.txtStreet.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStreet.Location = new System.Drawing.Point(128, 158);
+            this.txtStreet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStreet.Name = "txtStreet";
-            this.txtStreet.Size = new System.Drawing.Size(178, 20);
-            this.txtStreet.TabIndex = 39;
+            this.txtStreet.Size = new System.Drawing.Size(236, 22);
+            this.txtStreet.TabIndex = 11;
             // 
             // lblStreet
             // 
             this.lblStreet.AutoSize = true;
-            this.lblStreet.Location = new System.Drawing.Point(9, 130);
-            this.lblStreet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStreet.Location = new System.Drawing.Point(12, 160);
             this.lblStreet.Name = "lblStreet";
-            this.lblStreet.Size = new System.Drawing.Size(35, 13);
+            this.lblStreet.Size = new System.Drawing.Size(46, 17);
             this.lblStreet.TabIndex = 38;
             this.lblStreet.Text = "Street";
             // 
             // txtPostalCode
             // 
-            this.txtPostalCode.Location = new System.Drawing.Point(96, 152);
-            this.txtPostalCode.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPostalCode.Location = new System.Drawing.Point(128, 187);
+            this.txtPostalCode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPostalCode.Name = "txtPostalCode";
-            this.txtPostalCode.Size = new System.Drawing.Size(178, 20);
-            this.txtPostalCode.TabIndex = 37;
+            this.txtPostalCode.Size = new System.Drawing.Size(236, 22);
+            this.txtPostalCode.TabIndex = 13;
             // 
             // lblPostalCode
             // 
             this.lblPostalCode.AutoSize = true;
-            this.lblPostalCode.Location = new System.Drawing.Point(9, 155);
-            this.lblPostalCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPostalCode.Location = new System.Drawing.Point(12, 191);
             this.lblPostalCode.Name = "lblPostalCode";
-            this.lblPostalCode.Size = new System.Drawing.Size(64, 13);
+            this.lblPostalCode.Size = new System.Drawing.Size(84, 17);
             this.lblPostalCode.TabIndex = 36;
             this.lblPostalCode.Text = "Postal Code";
             // 
             // FormNewAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(285, 263);
+            this.ClientSize = new System.Drawing.Size(380, 324);
             this.Controls.Add(this.txtStreet);
             this.Controls.Add(this.lblStreet);
             this.Controls.Add(this.txtPostalCode);
@@ -260,7 +251,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormNewAccount";
             this.Text = "New Account";
             this.ResumeLayout(false);

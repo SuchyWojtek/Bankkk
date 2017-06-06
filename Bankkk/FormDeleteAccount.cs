@@ -13,20 +13,21 @@ namespace Bankkk
 {
     public partial class FormDeleteAccount : Form
     {
-        string pass,log;
+        string pass,log,typeOfAccount;
 
-        public FormDeleteAccount(string pass, string log)
+        public FormDeleteAccount(string pass, string log, string typeOfAccount)
         {
             InitializeComponent();
             this.pass = pass;
             this.log = log;
+            this.typeOfAccount = typeOfAccount;
             txtDelete.PasswordChar = '*';
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMainWindow f = new FormMainWindow(log,pass);
+            FormMainWindow f = new FormMainWindow(log,pass,typeOfAccount);
             f.Show();
         }
 
@@ -35,7 +36,15 @@ namespace Bankkk
             if(pass == txtDelete.Text.ToString())
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Wojtek\Documents\Data.mdf;Integrated Security=True;Connect Timeout=30");
-                string query = "delete from Login where Username = '" + log + "' and Password = '" + pass + "'";
+                string query;
+                if(typeOfAccount == "p")
+                {
+                    query = "delete from Login where Username = '" + log + "' and Password = '" + pass + "'";
+                }
+                else
+                {
+                    query = "delete from Login2 where Username = '" + log + "' and Password = '" + pass + "'";
+                }
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 // wykonuje polecenie sql
