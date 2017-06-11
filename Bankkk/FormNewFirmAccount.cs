@@ -71,7 +71,6 @@ namespace Bankkk
             else if (txtRegon.Text.ToString() == "") { return false; }
             else if (txtKrs.Text.ToString() == "") { return false; }
             else return true;
-
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)

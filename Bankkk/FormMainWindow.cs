@@ -77,7 +77,7 @@ namespace Bankkk
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
-                MessageBox.Show("Your saldo is: " + dt.Rows[0][0].ToString() + " pesos"); // moja waluta 'pesos'
+                MessageBox.Show("Your saldo is: " + float.Parse(dt.Rows[0][0].ToString()) + " pesos"); // moja waluta 'pesos'
             }
             else
             {
@@ -86,7 +86,7 @@ namespace Bankkk
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
-                MessageBox.Show("Your saldo is: " + dt.Rows[0][0].ToString() + " pesos"); // moja waluta 'pesos'
+                MessageBox.Show("Your saldo is: " + float.Parse(dt.Rows[0][0].ToString()) + " pesos"); // moja waluta 'pesos'
             }
         }
         private void btnWithdraw_Click(object sender, EventArgs e) // jak chcemy cos wplacic to dzieje sie to w innym oknie
